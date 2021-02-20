@@ -20,7 +20,6 @@ public class LoginStepDefs {
         String username =null;
         String password =null;
 
-
       if(userType.equals("sales manager")){
             username = ConfigurationReader.get("sales_manager_username");
             password = ConfigurationReader.get("sales_manager_password");
