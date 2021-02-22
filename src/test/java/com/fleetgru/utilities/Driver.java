@@ -31,7 +31,7 @@ public class Driver {
 //           if we do not pass the driver from terminal then use the one properties file
             String browser = System.getProperty("browser") != null ? browser = System.getProperty("browser") : com.fleetgru.utilities.ConfigurationReader.get("browser");
             switch (browser) {
-                case "chrome":
+                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driverPool.set(new ChromeDriver());
                     break;
