@@ -24,7 +24,7 @@ public class CarDefs {
     @When("the user navigates to Fleet Vehicles page")
     public void the_user_navigates_to_Fleet_Vehicles_page() {
         new DashboardPage().navigateToModule("Fleet", "Vehicles");
-        BrowserUtils.waitFor(5);
+        BrowserUtils.waitFor(30);
         Assert.assertTrue(new DashboardPage().getPageSubTitle().contains("Cars"));
     }
 

@@ -26,7 +26,10 @@ public class LoginStepDefs {
         }else if(userType.equals("store manager")){
             username = ConfigurationReader.get("store_manager_username");
             password = ConfigurationReader.get("store_manager_password");
-        }
+        }else if(userType.equals("truck driver")){
+            username = ConfigurationReader.get("truck_driver_username");
+             password = ConfigurationReader.get("truck_driver_password");
+      }
 
         new LoginPage().login(username,password);
     }
